@@ -1,0 +1,36 @@
+.back-button {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+
+    display: flex;
+    align-items: center;
+
+    font-size: var(--font-size-s);
+    font-weight: 600;
+
+    color: var(--color-inverted);
+    background-color: var(--color-primary);
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+
+    transition: background-color var(--animation-duration-fast), transform 0.2s;
+}
+
+.back-button .arrow {
+    font-size: var(--font-size-l);
+    transition: transform var(--animation-duration-fast) ease;
+    transform: rotate(180deg);
+    line-height: 32px;
+}
+
+.back-button:hover .arrow {
+    transform: rotate(180deg) translateX(-5px);
+}
+
+.back-button:active {
+    transform: scale(0.98);
+}

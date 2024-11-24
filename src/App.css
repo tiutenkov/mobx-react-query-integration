@@ -1,0 +1,94 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+
+
+    --color-primary: #f28400;
+    --color-secondary: #e4f4ff;
+    --color-error: #ff0000;
+    --color-inverted: #ffffff;
+    --color-disabled: #fbbc71;
+
+    --color-main-text: #333;
+    --color-main-background: aquamarine;
+
+    --font-size-s: 16px;
+    --font-size-m: 24px;
+    --font-size-l: 40px;
+
+    --animation-duration-fast: 0.3s;
+    --animation-duration-normal: 1.3s;
+    --animation-duration-slow: 8s;
+
+    --main-layout-width: 800px;
+}
+
+body {
+    font-family: Hack, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-main-text);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+textarea,
+input,
+button {
+    font-size: var(--font-size-s);
+    font-family: inherit;
+
+    padding: 8px 12px;
+    line-height: 1.5;
+    margin: 0;
+
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 1px hsla(0, 0%, 0%, 0.2), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+    background-color: var(--color-inverted);
+}
+
+button {
+    font-weight: 500;
+}
+
+
+button:active {
+    box-shadow: 0 0 1px hsla(0, 0%, 0%, 0.4);
+    transform: translateY(1px);
+}
+
+button:disabled {
+    background-color: var(--color-disabled);
+    color: var(--color-inverted);
+    cursor: default;
+}
+
+button:disabled:hover {
+    background-color: var(--color-disabled);
+    box-shadow: 0 0 1px hsla(0, 0%, 0%, 0.2), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+    transform: none;
+}
+
+a {
+    font-weight: 500;
+    color: var(--color-main-text);
+    text-decoration: inherit;
+}
