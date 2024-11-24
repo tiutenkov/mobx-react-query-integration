@@ -1,0 +1,14 @@
+.layout {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: var(--main-layout-width);
+    padding: 20px 20px 60px;
+
+    background-color: var(--color-main-background);
+    box-shadow: 0 0 80px var(--color-primary);
+    border-radius: 16px;
+}

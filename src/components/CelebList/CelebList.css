@@ -1,0 +1,24 @@
+.celeb-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.celeb-list h2 {
+    margin-bottom: 10px;
+}
+
+.celeb-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.celeb-list a {
+    display: block;
+    width: 100%;
+    transition: background-color 0.2s;
+    padding: 10px;
+}
+
+.celeb-list a:hover {
+    background-color: var(--color-secondary)
+}
